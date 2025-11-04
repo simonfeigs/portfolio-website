@@ -111,3 +111,7 @@ footer {
     font-weight: bold;
     margin-right: 5px;
 }
+
+.video-container {
+    max-width: 1000px;
+}
