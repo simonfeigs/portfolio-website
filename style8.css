@@ -27,7 +27,7 @@ time, mark, audio, video {
 }
 
 .p2 {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 body {
@@ -49,7 +49,7 @@ div {
     position: relative;
     display: flex;
     width: 1500px;
-    height: 900px;
+    height: 40px;
     overflow: hidden;
     align-items: center;
     justify-content: center;
