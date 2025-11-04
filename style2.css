@@ -1,0 +1,248 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+.home-button {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body {
+    background-image: url("background1.jpg");
+}
+
+.title {
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.columns {
+    column-count: 3;
+}
+
+button {
+    font-size: 25px;
+    height: 55px;
+    width: 180px;
+    cursor: grab;
+    transition-duration: 0.4s;
+    background-color: #cdffff;
+}
+button:hover {
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+p {
+    font-size: 22px;
+    font-family: monospace;
+}
+
+.div1 {
+    background-image: url(pback1.png);
+    width: 900px;
+}
+
+.div0 {
+   
+}
+
+
+css
+Copy
+Edit
+/* Reset some default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box; /* Apply globally */
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    font-size: 30px;
+    position: fixed;
+    border: 2px solid #000;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.menu-item {
+    position: relative; /* Required for the dropdown positioning */
+}
+
+.menu > .menu-item > a {
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    padding: 50px;
+    margin: 5px;
+    text-align: center;
+    border: 4px solid #000;
+    width: 300px;
+    display: block;
+    background-color: #666;
+    outline-color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.menu > .menu-item > a:hover {
+    background-color: #555;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+    position: absolute;
+    top: 100%; /* Aligns dropdown just below the parent menu item */
+    left: 0;
+    background-color: #444;
+    display: none; /* Hidden by default */
+    z-index: 10;
+    width: 300px;
+}
+
+.dropdown li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown li a:hover {
+    background-color: #666;
+}
+
+/* Show dropdown on hover */
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+.container {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height (adjust as needed) */
+}
+
+img {
+    max-width: 100%; /* Optional: scale the image responsively */
+    height: auto;
+}
+
+

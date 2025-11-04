@@ -1,0 +1,51 @@
+/* Basic Styles */
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    color: #333;
+}
+
+.home-button {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+.p2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+header {
+    background-color: aqua;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.overview, .gallery, .details, .video {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: #fff;
+    border-radius: 8px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: monospace;
+    border: solid 10px rgb(165, 255, 255);
+}
+
+footer {
+    text-align: center;
+    
+    background-image: url(background1.jpg);
+    color: #fff;
+    height: 75px;
+}

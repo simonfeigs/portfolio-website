@@ -1,0 +1,171 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+}
+
+body {
+    background-image: url("background1.jpg");
+}
+
+/* Reset some default styles */
+body {
+    font-family: monospace;
+    display: flex;
+    height: 100%;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Align buttons vertically */
+}
+
+header {
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.home-button {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+.div4 {
+    background-color: rgb(255, 255, 255, .5);
+    border-radius: 15px;
+    width: 550px;
+
+}
+
+.button-row {
+    display: flex; /* Use flexbox to arrange items in a row */
+    gap: 10px; /* Add space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Align buttons vertically */
+    width: 900px;
+    padding-top: 10PX;
+    padding-bottom: 10PX;
+}
+
+.button {
+    background-color: rgb(255, 255, 255, .65);
+}
+.hover-container {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden; /* Prevents content overflow */
+    height: 250x;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    
+}
+
+.hover-container img {
+    transition: opacity 0.3s ease; /* Smooth transition */
+    height: 50%;
+    width: 50%;
+    background-color: rgb(255, 255, 255, .65);
+    border-radius: 50%;
+    border: 5px solid black;
+
+}
+
+.hover-container .hover-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by half the text's width and height */
+    font-size: 24px; /* Adjust text size */
+    color: #000000; /* Text color */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease, background-color 0.3s ease;
+    white-space: nowrap; 
+    background-color: rgb(255, 255, 255, .8); 
+    width: 210px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: grab;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effects for image and text */
+.hover-container:hover .hover-image {
+    opacity: 0; /* Fade out the image */
+}
+
+.hover-container:hover .hover-text {
+    opacity: 1; /* Fade in the text */
+}
+
+/* Show text when hovering over container */
+.hover-container:hover .hover-text {
+    opacity: 0.5; /* Show the text */
+}
+
+/* Darken background only when hovering over the text box */
+.hover-container .hover-text:hover {
+    background-color: rgba(65, 25, 25, 0.5); /* Darker background */
+}
+
+.hover-container:hover img {
+    opacity: 0; /* Hide the image on hover */
+}
+
+.hover-container:hover .hover-text {
+    opacity: 1; /* Show the text on hover */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div6 {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: none;
+}
+
+.content-button:hover, .back-button:hover {
+    background-color: #0056b3;
+}

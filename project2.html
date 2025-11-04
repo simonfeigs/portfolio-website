@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isles Demo</title>
+    <link rel="stylesheet" href="stylesproject1.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="home-button">
+            <img src="homebutton1.png">
+        </a>
+        <h1>Buccaneer Isles Game Demo</h1>
+        <p>(Dev. 2022)</p>
+    </header>
+    <section class="overview">
+        <p class="p2">
+            Project Summary:
+        </p>
+        <p>For my final level design project in my game design course at VCAD, 
+            I had to create a short game demo using Unreal Engine. While we were 
+            allowed to use Quixel Bridge assets, I decided to challenge myself 
+            by making my own custom 3D assets and foliage in a stylized art style. 
+            I went with a pirate-themed gameplay concept where you sail around 
+            a small island cluster, searching for treasure and blasting obstacles 
+            with a cannon—while avoiding a pirate ship that would chase 
+            you if you got too close. I’m really proud of the environment and 
+            concept I created. I didn’t have as much time to focus on blueprinting 
+            all the game mechanics, but even without a fully fleshed-out gameplay 
+            system, I was really happy with the final result!</p>
+    </section>
+    
+    <section class="gallery">
+        <p class="p2">
+            Project Images:
+        </p>
+        <div class="image-grid">
+            <a href="islespic1.jpg" class="lightbox-trigger">
+                <img src="islespic1.jpg" alt="Project1 Image 1">
+            </a>
+            <a href="islespic2.jpg" class="lightbox-trigger">
+                <img src="islespic2.jpg" alt="Project1 Image 2">
+            </a>
+            <a href="islespic3.jpg" class="lightbox-trigger">
+                <img src="islespic3.jpg" alt="Project1 Image 3">
+            </a>
+            <a href="islespic4.jpg" class="lightbox-trigger">
+                <img src="islespic4.jpg" alt="Project1 Image 4">
+            </a>
+            <a href="islespic5.jpg" class="lightbox-trigger">
+                <img src="islespic5.jpg" alt="Project1 Image 5">
+            </a>
+            <a href="islespic6.jpg" class="lightbox-trigger">
+                <img src="islespic6.jpg" alt="Project1 Image 6">
+            </a>
+        </div>
+    </section>
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="">
+    </div>
+    
+    <section class="details">
+        <p class="p2">
+            Project Results:
+        </p>
+        <p class="p3">I recieved an %87 grade for this project</p>
+        <p class="p3">"Those are game ready assets" - Game Design Instructor</p>
+        <p class="p3">I became far more adept at using Unreal Engine 5 as a result of this project</p>
+    </section>
+    
+    <section class="video">
+        <p class="p2">
+            Project Video:
+        </p>
+        <p>(I do not currently have a video of the demo showing all mechanics in motion, but I still hope you enjoy!)</p>
+        <video controls poster="islespic4.jpg">
+            <source src="islesvid1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <footer>
+        
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const closeBtn = document.querySelector(".close");
+
+        document.querySelectorAll(".lightbox-trigger").forEach(imgLink => {
+            imgLink.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link behavior
+                lightbox.style.display = "flex";
+                lightboxImg.src = this.href; // Set lightbox image
+            });
+        });
+
+        closeBtn.addEventListener("click", function () {
+            lightbox.style.display = "none";
+        });
+
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener("click", function (event) {
+            if (event.target === lightbox) {
+                lightbox.style.display = "none";
+            }
+        });
+    });
+</script>
+</html>

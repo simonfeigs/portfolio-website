@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style4.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>More about Simon</title>
+    </head>  
+    <br><br><br>
+    <a href="index.html" class="home-button">
+        <img src="homebutton1.png">
+    </a>
+    <center>
+        <div class="button-row">
+            <div class="div5">
+                <img src="whoissimon3.png">
+            </div>
+            <br><br><br><br><br>
+            <section>
+                <!-- Audio Element -->
+                <audio id="aboutMeAudio">
+                    <source src="aboutme_portfoliowebsite.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                
+                <!-- Play Button -->
+                <button onclick="playAudio()">PLAY AUDIO</button>
+                <br><br>
+                <button onclick="stopAudio()">STOP AUDIO</button>
+                
+                <!-- JavaScript -->
+                <script>
+                    function playAudio() {
+                        const audio = document.getElementById('aboutMeAudio');
+                        audio.volume = 0.4;
+                        audio.play()
+                            .then(() => {
+                                console.log('Audio is playing!');
+                            })
+                            .catch(error => {
+                                console.error('Error playing audio:', error);
+                            });
+                    }
+                    function stopAudio() {
+                        const audio = document.getElementById('aboutMeAudio');
+                        audio.pause(); // Pause the audio
+                        audio.currentTime = 0; // Reset the playback position to the beginning
+                        console.log('Audio has been stopped!');
+                    }
+                </script> 
+            </section>
+        </div>
+        <section>
+            <img src="aboutme6png.png">
+        </section>
+    </center>
+    <br><br>
+</html>

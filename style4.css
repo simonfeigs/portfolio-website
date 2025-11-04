@@ -1,0 +1,77 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+}
+
+body {
+    background-image: url("background1.jpg");
+}
+
+/* Reset some default styles */
+body {
+    font-family: monospace;
+}
+
+.home-button {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+.div5 {
+    background-color: rgb(255, 255, 255, .5);
+    border-radius: 15px;
+    width: 400px;
+}
+
+button {
+    padding: 9px 20px; /* Adjust padding for size */
+    font-size: 12px; /* Make text readable */
+    font-weight: bold; /* Bold text */
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 3px solid black;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth effects */
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #555; /* Slightly lighter background */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Active (Pressed) Effect */
+button:active {
+    background-color: #222; /* Darker background */
+    transform: scale(0.95); /* Slightly smaller when clicked */
+}
+
+.button-row {
+    display: flex; /* Use flexbox to arrange items in a row */
+    gap: 20px; /* Add space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Align buttons vertically */
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon's Career</title>
+    <link rel="stylesheet" href="style5.css"> <!-- Linking External CSS -->
+</head>
+<body>
+    <a href="index.html" class="home-button">
+        <img src="homebutton1.png">
+    </a>
+    <!-- Button options -->
+    <br>
+    <div class="button-container" id="buttonContainer"><br>
+        <div class="div7">
+            <img src="mycareertitle.png">
+        </div>
+        <br><br><br><br><br><br><br>
+        <div>
+        
+        </div>
+        <button class="content-button" onclick="showContent('work')">Work History</button>
+        <br><br><br><br><br><br>
+        
+        <button class="content-button" onclick="showContent('school')">School History</button>
+        <br>
+       
+        
+    </div>
+    <!-- Content sections (hidden by default) -->
+    <div>
+        <div class="div8">
+            <button class="back-button" id="backButton" onclick="showButtons()">Return to options</button>
+            <style>
+                .back-button {
+                    position: fixed;  /* Stays in place even when scrolling */
+                    top: 30px;        /* Distance from the top */
+                    right: 20px;
+                    background-color: rgb(255, 255, 255, 0.5);
+                    width: 150px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    cursor: pointer;
+                    border-radius: 2px;
+                    display: none;
+                }
+            </style>
+        </div>
+        <br>
+        <div id="work" class="content-section">
+            <div class="resumediv">
+                <center>
+                    <div class="image-container">
+                        <img src="work_history_simonfeigs3.png" alt="portrait 1" class="portrait-default">
+                    </div>
+                </center>
+            </div>
+            <br><br><br><br>
+        </div>
+
+        <div id="school" class="content-section">
+            <div class="resumediv">
+                <center>
+                    <div class="image-container">
+                        <img src="school_history_simonfeigs-1.png" alt="portrait 1" class="portrait-default">
+                    </div>
+                </center>
+            </div>
+            <br><br><br><br>
+        </div>
+
+       <br><br><br><br>
+        </div>
+    </div>
+
+    <!-- Back button -->
+
+    <script>
+        function showContent(sectionId) {
+            // Hide button container
+            document.getElementById("buttonContainer").style.display = "none";
+
+            // Hide all content sections
+            let sections = document.querySelectorAll(".content-section");
+            sections.forEach(section => section.style.display = "none");
+
+            // Show selected content section
+            document.getElementById(sectionId).style.display = "block";
+
+            // Show the back button
+            document.getElementById("backButton").style.display = "block";
+        }
+
+        function showButtons() {
+            // Show button container again
+            document.getElementById("buttonContainer").style.display = "flex";
+
+            // Hide all content sections
+            let sections = document.querySelectorAll(".content-section");
+            sections.forEach(section => section.style.display = "none");
+
+            // Hide the back button
+            document.getElementById("backButton").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

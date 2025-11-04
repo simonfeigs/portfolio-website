@@ -1,0 +1,126 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+}
+
+/* General page styles */
+body {
+    background-image: url("background1.jpg");
+    margin-top: 40px;
+    display: flex;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-button {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+.div8 {
+    position: fixed;
+    right: 5px;
+}
+
+.div7 {
+    background-color: rgb(255, 255, 255, .5);
+    border-radius: 15px;
+    width: 500px;
+    height: 100px;
+}
+
+.div6 {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Container styling */
+.image-container {
+    position: relative;
+    align-items: center;
+    width: 900px; /* Set the width of the images */
+    height: 1200px; /* Set the height of the images */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Default image styling */
+.image-container .portrait-default {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.8s ease; /* Smooth fade-out */
+    opacity: 1; /* Fully visible by default */
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Style for buttons */
+.content-button {
+    padding: 12px 20px;
+    font-size: 20px;
+    font-family: monospace;
+    background-color: rgb(255, 255, 255, .5);
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 250px;
+}
+
+.content-button:hover, .back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Content sections - hidden by default */
+.content-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.resumediv {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
