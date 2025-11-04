@@ -112,3 +112,8 @@ footer {
     margin-right: 5px;
 }
 
+.video-container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
